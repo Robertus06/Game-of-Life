@@ -1,0 +1,43 @@
+body {
+    background-color: #000000;
+}
+
+.main{
+    text-align: center;
+}
+
+.main p{
+    color: white;
+}
+
+.main h1{
+    color: white;
+}
+
+.main input{
+    background: grey;
+    width: 24%;
+    border: 1;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#fondo{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+#tabla{
+    margin: 0 auto;
+    background-color: #131313;
+}
+
+.canvas {
+    margin: 10px;
+    background-color: #131313;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Juego de la vida</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <img src="assets/background.jpg" id="fondo">
+        <div class="main">
+            <table border="2" cellpadding="20" id="tabla">
+                <tr>
+                    <th>
+                        <h1>Juego de la vida</h1>
+                        <p style="color: grey;">Si quiere realizar una generación random de células seleccione Random</p>
+                        <div class="canvas">
+                            <canvas id="lienzo" width="600" height="600">
+                                Su navegador no soporta canvas...
+                            </canvas>
+                        </div>
+                        <div>
+                            <canvas id="lienzo2" width="600" height="40">
+                                Su navegador no soporta canvas...
+                            </canvas>
+                        </div>
+                        <div>
+                            <p id="pasosSimulados">El juego se encuentra en el paso: 0</p>
+                            <p id="simulacion">Simulación por defecto, pulse 'Iniciar' para empezar</p>
+                            <p id="velocidadSimulacion">Velocidad por defecto</p>
+                            <input type ="button" id="bajar" value="Bajar velocidad" onclick="velocidad('bajar')">
+                            <input type="button" id="iniciar" value="Iniciar" onclick="boton('iniciar', simulacion)">
+                            <input type="button" id="pausar" value="Pausar" onclick="boton('pausar', simulacion)">
+                            <input type ="button" id="subir" value="Subir velocidad" onclick="velocidad('subir')">
+                            <br>
+                            <br>
+                            <input type="button" id="reset" value="Reset" onclick="boton('reset', simulacion)">
+                            <input type="button" id="random" value="Random" onclick="boton('random', simulacion)">
+                            <input type="button" id="paso" value="Paso" onclick="boton('paso', simulacion)">
+                        </div>
+                    </th>
+                </tr>
+            </table>
+            <table border="2" cellpadding="10" id="tabla">
+                <tr>
+                    <th>
+                        <audio id="musica" controls loop>
+                            <source src="assets/GameMusic.mp3"/>
+                        </audio>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
