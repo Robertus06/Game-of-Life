@@ -7,6 +7,13 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
+        <script>
+            do {
+                numCelulas = prompt("¿Que tamaño desea para el tablero?\nNúmero de células por columna y fila (Seleccione entre 20 y 60)", "40");
+                if(numCelulas == undefined)
+                    numCelulas = 40;
+            } while (numCelulas < 20 || numCelulas > 60);
+        </script>
         <img src="assets/background.jpg" id="fondo">
         <div class="main">
             <table border="2" cellpadding="20" id="tabla">
