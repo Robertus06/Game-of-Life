@@ -1,9 +1,3 @@
-do {
-    numCelulas = prompt("¿Que tamaño desea para el tablero?\nNúmero de células por columna y fila (Seleccione entre 20 y 60)", "40");
-    if(numCelulas == undefined)
-        numCelulas = 40;
-} while (numCelulas < 20 || numCelulas > 60);
-
 var alto = 600;
 var ancho = 600;
 
